@@ -19,12 +19,12 @@
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)">
+      <div class="carousel-item active" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/hero-carousel/hero-carousel-1.jpg)">
       </div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/hero-carousel/hero-carousel-2.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/hero-carousel/hero-carousel-3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/hero-carousel/hero-carousel-4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/hero-carousel/hero-carousel-5.jpg)"></div>
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -113,7 +113,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-1.jpg);"></div>
+                  <div class="card-bg" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/constructions-1.jpg);"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -130,7 +130,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
+                  <div class="card-bg" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/constructions-2.jpg);"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -148,7 +148,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-3.jpg);"></div>
+                  <div class="card-bg" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/constructions-3.jpg);"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -166,7 +166,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-4.jpg);"></div>
+                  <div class="card-bg" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/constructions-4.jpg);"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -285,7 +285,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in"
+          <div class="col-lg-6 img-bg" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/alt-services.jpg);" data-aos="zoom-in"
             data-aos-delay="100"></div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center">
@@ -387,7 +387,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
+                <img src="<?=BURL?>themes/ebulient_landing/img/features-1.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -412,7 +412,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
+                <img src="<?=BURL?>themes/ebulient_landing/img/features-2.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -434,7 +434,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
+                <img src="<?=BURL?>themes/ebulient_landing/img/features-3.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -457,7 +457,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
+                <img src="<?=BURL?>themes/ebulient_landing/img/features-4.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -492,11 +492,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-1.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/remodeling-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Remodeling 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/remodeling-1.jpg" title="Remodeling 1"
                     data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -507,11 +507,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/construction-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Construction 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/construction-1.jpg" title="Construction 1"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/construction-1.jpg" title="Construction 1"
                     data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -522,11 +522,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/repairs-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Repairs 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/repairs-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/repairs-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -536,11 +536,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/design-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Design 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/design-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-book"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/design-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -550,11 +550,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Remodeling 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/remodeling-2.jpg" title="Remodeling 2"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/remodeling-2.jpg" title="Remodeling 2"
                     data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -565,11 +565,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/construction-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Construction 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/construction-2.jpg" title="Construction 2"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/construction-2.jpg" title="Construction 2"
                     data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -580,11 +580,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/repairs-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Repairs 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -594,11 +594,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/design-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Design 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -608,11 +608,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Remodeling 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/remodeling-3.jpg" title="Remodeling 3"
                     data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -623,11 +623,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/construction-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Construction 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/construction-3.jpg" title="Construction 3"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/construction-3.jpg" title="Construction 3"
                     data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -638,11 +638,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/repairs-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Repairs 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/repairs-3.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/repairs-3.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -652,11 +652,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
+                <img src="<?=BURL?>themes/ebulient_landing/img/projects/design-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Design 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/design-3.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book"
+                  <a href="<?=BURL?>themes/ebulient_landing/img/projects/design-3.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -687,7 +687,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                   <div class="stars">
@@ -707,7 +707,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                   <div class="stars">
@@ -727,7 +727,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                   <div class="stars">
@@ -747,7 +747,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                   <div class="stars">
@@ -767,7 +767,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                   <div class="stars">
@@ -809,7 +809,7 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+              <img src="<?=BURL?>themes/ebulient_landing/img/blog/blog-1.jpg" class="img-fluid" alt="">
               <span class="post-date">December 12</span>
             </div>
 
@@ -841,7 +841,7 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+              <img src="<?=BURL?>themes/ebulient_landing/img/blog/blog-2.jpg" class="img-fluid" alt="">
               <span class="post-date">July 17</span>
             </div>
 
@@ -873,7 +873,7 @@
           <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+              <img src="<?=BURL?>themes/ebulient_landing/img/blog/blog-3.jpg" class="img-fluid" alt="">
               <span class="post-date">September 05</span>
             </div>
 
