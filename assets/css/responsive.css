@@ -1,0 +1,41 @@
+@media (max-width: 970px) {
+    .users-active{
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    .users-active{
+        display: none;
+    }
+}
+
+@media (max-width: 682) {
+    .users-active{
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    .users-active{
+        display: none;
+    }
+}
+
+@media (max-width: 255px) {
+    .users-active{
+        display: none;
+    }
+}
+
+@media (max-width: 180px) {
+    .users-active{
+        display: none;
+    }
+}
+
+@media (max-width: 138px) {
+    .users-active{
+        display: none;
+    }
+}
