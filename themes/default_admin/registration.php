@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Ebulient Integrated Services Limited | Admin Registration</title>
 
     <meta name="description" content="" />
 
@@ -57,29 +57,17 @@
                             </a>
                         </div>
                         <!-- /Logo -->
-                        <h4 class="mb-2">Welcome to <?= $this->setting->site_name ?>! 👋</h4>
-                        <p class="mb-4">Please enter credentials to sign-in to your account</p>
+                        <h4 class="mb-2 text-center">Welcome to <?= $this->setting->site_name ?>! 👋</h4>
+                        <p class="mb-4  text-center">Please enter credentials to sign-up to your account</p>
 
-                        <form id="formAuthentication" class="mb-3" action="<?= BURL ?>login/action" method="POST">
+                        <form id="formAuthentication" class="mb-3" action="<?= BURL ?>register/action" method="POST">
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="param" placeholder="Enter your email or username" autofocus />
+                                <label for="fullname" class="form-label">Fullname</label>
+                                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your Fullname" autofocus />
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="param" placeholder="Enter your email or username" autofocus />
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="param" placeholder="Enter your email or username" autofocus />
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="param" placeholder="Enter your email or username" autofocus />
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="param" placeholder="Enter your email or username" autofocus />
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" autofocus />
                             </div>
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
@@ -90,6 +78,15 @@
                                 </div>
                                 <div class="input-group input-group-merge">
                                     <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-password-toggle">
+                                <div class="d-flex justify-content-between">
+                                    <label class="form-label" for="confirm password">Confirm Password</label>
+                                </div>
+                                <div class="input-group input-group-merge">
+                                    <input type="password" id="ConfirmPassword" class="form-control" name="cpassword" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
                                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                                 </div>
                             </div>

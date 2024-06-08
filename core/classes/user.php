@@ -26,7 +26,7 @@
 					$this->is_suspended = $row['is_suspended'];
 					$this->account_type = $row['account_type'];
 					$this->reset_code = $row['reset_code'];
-					$this->username = $row['username'];
+					// $this->username = $row['username'];
 					$this->photo = $row['photo'];
 					$this->address = $row['address'];
 					$this->banner = $row['banner'];

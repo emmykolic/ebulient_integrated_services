@@ -73,9 +73,9 @@
           <li><a href="index.php" class="active">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="services.php">Services</a></li>
-          <li><a href="projects.php">Projects</a></li>
+          <li><a href="projects.php">Careers</a></li>
           <li><a href="blog.php">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+          <li class="dropdown"><a href="#"><span>Services</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -95,6 +95,11 @@
             </ul>
           </li>
           <li><a href="<?=BURL?>contact">Contact</a></li>
+          <li><a href="<?=BURL?>login">login</a></li>
+
+          <?php if ($this->auth->user->type == 9): ?>
+          <li><a href="<?=BURL?>dashboard">Dashboard</a></li>
+          <?php endif; ?>
         </ul>
       </nav><!-- .navbar -->
 
