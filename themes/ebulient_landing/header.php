@@ -72,7 +72,7 @@
         <ul>
           <li><a href="<?=BURL?>" class="active">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a href="services.php">Services</a></li>
+          <li><a href="<?=BURL?>services">Services</a></li>
           <li><a href="projects.php">Careers</a></li>
           <li><a href="blog.php">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Services</span> <i
