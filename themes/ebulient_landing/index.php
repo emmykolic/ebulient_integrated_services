@@ -1,21 +1,18 @@
-
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
 
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Welcome to <span>UpConstruction</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
-          </div>
+  <div class="info d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center mt-5">
+          <h2 class="fade-downs" data-aos="fade-down">Welcome To <span class="small"><?=$this->setting->site_name?></span></h2>
+          <p class="fade-description" data-aos="fade-up"><?=$this->setting->site_description?></p>
+          <a id="contact" data-aos="fade-up" data-aos-delay="200" href="<?=BURL?>contact" class="btn-get-started">Contact Us</a>
         </div>
       </div>
     </div>
+  </div>
+
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -43,59 +40,84 @@
     <!-- ======= Get Started Section ======= -->
     <section id="get-started" class="get-started section-bg">
       <div class="container">
-
         <div class="row justify-content-between gy-4">
-
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
             <div class="content">
-              <h3>Minus hic non reiciendis ea possimus at quia.</h3>
-              <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis
-                ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus
-                dicta.
-              <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt
-                porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+            <!-- <h3>Minus hic non reiciendis ea possimus at quia.</h3> -->
+              <p>EIS limited has built a strong franchise of quality and excellence over the
+                years and services a wide Oil & Gas industry customer base. Supported by
+                professional technical, operations & marketing teams, the company has
+                excellent team that delivers projects and is a financially strong and
+                stable company.
+                EIS limited continues to offer the highest standards of products & services
+                by leveraging on competencies, brand value and Strategic Alliances.
+                The company has excellent safety record and is an equal opportunity
+                company. Our people are multi-skilled and multi-talented with a
+                passion for quality service and continuous customer delight. <br><br>
+                <b>OUR VISION</b>
+                “To be a leading cutting edge company that provides sustainable
+                solutions to Africa Oil & Gas and Energy industry” <br><br>
+                <b>OUR MISSION</b>
+                “To provide quality, efficient and safe services to our clients that meets
+                and exceeds expectations” <br><br>
+                <b>OUR VALUE PROPOSITION</b>
+                <ul>
+                  <li>EXCELLENCE</li>
+                  <li>SAFE PROJECTS</li>
+                  <li>CONTINUOUS LEARNING AND IMPROVEMENT</li>
+                  <li>CARE AND RESPECT</li>
+                </ul>
+              </p>
+              <p>At EBULIENT INTEGRATED SERVICES LIMITED we believe in teamwork.
+                Teamwork is therefore highly encouraged amongst stakeholders because
+                together we can achieve more. Excellence and creativity is also our style of
+                service delivery because we see excellence and creativity as a hallmark of
+                professionalism in servicing our clients
+                <b>EIS limited solutions include:</b></p>
             </div>
           </div>
-
-          <div class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Get a quote</h3>
-              <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero
-                park flows.</p>
-              <div class="row gy-3">
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-
-                <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button type="submit">Get a quote</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Quote Form -->
-
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              
+              <p><b>Industrial gas & Chemicals | Chemical Cleaning | Engineering Services | Supply Services |</b><br><br>
+              INDUSTRIAL GAS & CHEMICAL</p>
+              <ul>
+                <b>Welding and Cutting gases</b>
+                <li>Oxygen</li>
+                <li>Acetylene</li>
+                <li>Propane</li>
+                <b>Inert gases</b>
+                <li>Nitrogen</li>
+                <li>Argon</li>
+                <li>Helium</li>
+              </ul>
+              <p>Fire Fighting Gases</p>
+              <ul>
+                <li>Carbon dioxide</li>
+                <li>Refrigerants</li>
+                <li>Argonite</li>
+                <li>Argon/Carbon dioxide Mixture</li>
+              </ul>
+              <p>Refrigerant gases</p>
+              <ul>
+                <li>134A</li>
+                <li>404</li>
+                <li>407C</li>
+                <li>F22 & F12</li>
+              </ul>
+              <p>Compressed Air & SCBA</p>
+              <p>Specialty Gases</p>
+              <ul>
+                <li>Calibration gases</li>
+                <li>Gas mixture</li>
+                <li>Hydrogen</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
       </div>
-    </section><!-- End Get Started Section -->
+    </section>
+<!-- End Get Started Section -->
 
     <!-- ======= Constructions Section ======= -->
     <section id="constructions" class="constructions">

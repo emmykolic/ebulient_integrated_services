@@ -671,6 +671,19 @@ section {
   background: rgba(254, 185, 0, 0.8);
 }
 
+@media (max-width: 320px) and (max-height: 611px) {
+  .fade-downs {
+    
+    display: none;
+  }
+  .fade-description{
+    margin-top: 130px; /* Adjust the value as needed */
+  }
+  #contact{
+    display: none;
+  }
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
