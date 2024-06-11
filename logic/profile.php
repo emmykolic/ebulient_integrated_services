@@ -4,9 +4,11 @@ class profile extends boiler{
  		parent::__construct();
     }
 
- 	public function  defaultb($uid){
+ 	public function defaultb(){
  		$this->page_title="Edit Profile";
-		$this->set_token(); 
+		$this->set_token();
+		$this->auth->user();
+		$uid = $this->auth->uid;
         $profile=$this->db->query("SELECT * FROM users WHERE uid='$uid'");
 		$profile=$profile->fetch_assoc();
 

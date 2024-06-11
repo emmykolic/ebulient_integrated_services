@@ -96,9 +96,9 @@
                         </form>
 
                         <p class="text-center">
-                            <span>New on our platform?</span>
-                            <a href="<?= BURL ?>register">
-                                <span>Create an account</span>
+                            <span>Already have an Account?</span>
+                            <a href="<?= BURL ?>login">
+                                <span>Login</span>
                             </a>
                         </p>
                     </div>
