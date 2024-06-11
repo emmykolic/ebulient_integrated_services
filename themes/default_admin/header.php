@@ -85,7 +85,7 @@
                 <div class="navbar-nav w-100">
                     <a href="<?=BURL?>dashboard" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="<?=BURL?>forms" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                 </div>
@@ -98,9 +98,9 @@
         <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="<?=BURL?>" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
-                </a>
+                <!-- <a href="<?=BURL?>" class="navbar-brand d-flex d-lg-none me-4"> -->
+                    <!-- <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2> -->
+                <!-- </a> -->
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -109,7 +109,7 @@
                 </form>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <a href="<?=BURL?>" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <?php if(isset($prow) && is_array($prow)): ?>
                                 <img class="rounded-circle me-lg-2" src="<?=BURL?><?php echo $prow['photo']; ?>" alt="" style="width: 40px; height: 40px;">
                             <?php else: ?>
