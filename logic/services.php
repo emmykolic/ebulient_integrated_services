@@ -28,4 +28,14 @@ class services extends boiler
 		include_once 'themes/' . $this->setting->landing_theme . '/footer.php';
 	}
 
+	public function chemical_cleaning(){
+		$this->page_title = "Chemical Cleaning Services";
+		// $this->stats = new stats($this->db);
+
+		// $this->set_token();
+		include_once 'themes/' . $this->setting->landing_theme . '/header.php';
+		include_once 'themes/' . $this->setting->landing_theme . '/chemical_cleaning_services.php';
+		include_once 'themes/' . $this->setting->landing_theme . '/footer.php';
+	}
+
 }

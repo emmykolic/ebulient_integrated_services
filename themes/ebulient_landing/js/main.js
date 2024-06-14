@@ -208,5 +208,40 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
-
+  
 });
+
+$(document).ready(function() {
+  var $grid = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'masonry'
+  });
+
+  $('.portfolio-flters li').on('click', function() {
+      $('.portfolio-flters li').removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+  });
+
+  // Initialize GLightbox
+  const lightbox = GLightbox({
+      selector: '.glightbox'
+  });
+});
+
+// $(document).ready(function() {
+//   var $grid = $('.portfolio-container').isotope({
+//       itemSelector: '.portfolio-item',
+//       layoutMode: 'masonry'
+//   });
+
+//   $('.portfolio-flters li').on('click', function() {
+//       $('.portfolio-flters li').removeClass('filter-active');
+//       $(this).addClass('filter-active');
+
+//       var filterValue = $(this).attr('data-filter');
+//       $grid.isotope({ filter: filterValue });
+//   });
+// });

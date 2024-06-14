@@ -26,51 +26,22 @@
         </div>
         <div class="col-sm-12 col-xl-6">
             <div class="bg-light rounded h-100 p-4">
-                <h6 class="mb-4">Construction Form</h6>
-                <form>
+                <h6 class="mb-4">Rental Form</h6>
+                <form action="<?=BURL?>forms/rental_action" method="POST" enctype="multipart/form-data">
                     <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3">
+                            <input type="name" class="form-control" id="inputName3" name="name">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <label for="inputFile3" class="col-sm-2 col-form-label">Rental Image</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3">
+                            <input type="file" class="form-control" id="inputFile3" name="rental_img" accept=".jpeg, .jpg, .png, .gif, .webp">
                         </div>
                     </div>
-                    <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios"
-                                    id="gridRadios1" value="option1" checked>
-                                <label class="form-check-label" for="gridRadios1">
-                                    First radio
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios"
-                                    id="gridRadios2" value="option2">
-                                <label class="form-check-label" for="gridRadios2">
-                                    Second radio
-                                </label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Checkbox</legend>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                <label class="form-check-label" for="gridCheck1">
-                                    Check me out
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+
+                    <div class="text-center"><button type="submit" class="btn btn-primary col-6">Send</button></div>
                 </form>
             </div>
         </div>

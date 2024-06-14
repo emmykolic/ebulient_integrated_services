@@ -33,7 +33,11 @@
     <script src="<?=BURL?>themes/default_admin/lib/tempusdominus/js/moment.min.js"></script>
     <script src="<?=BURL?>themes/default_admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="<?=BURL?>themes/default_admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
+    <!-- Bootstrap Notify -->
+    <script src="<?= BURL ?>assets/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="<?= BURL ?>assets/sweetalert/sweetalert.min.js"></script>
+    
     <!-- Template Javascript -->
     <script src="<?=BURL?>themes/default_admin/js/main.js"></script>
 </body>

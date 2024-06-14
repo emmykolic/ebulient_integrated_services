@@ -93,7 +93,8 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
   <!-- Vendor JS Files -->
   <script src="<?=BURL?>themes/ebulient_landing/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?=BURL?>themes/ebulient_landing/vendor/aos/aos.js"></script>
@@ -103,6 +104,10 @@
   <script src="<?=BURL?>themes/ebulient_landing/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="<?=BURL?>themes/ebulient_landing/vendor/php-email-form/validate.js"></script>
 
+  <!-- Bootstrap Notify -->
+  <script src="<?= BURL ?>assets/bootstrap-notify/bootstrap-notify.min.js"></script>
+  <!-- Sweet Alert -->
+  <script src="<?= BURL ?>assets/sweetalert/sweetalert.min.js"></script>
   <!-- Template Main JS File -->
   <script src="<?=BURL?>themes/ebulient_landing/js/main.js"></script>
 
