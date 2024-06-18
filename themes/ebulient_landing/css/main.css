@@ -746,12 +746,12 @@ section {
   height: 100%;
 }
 
-.services .service-item .icon {
+/* .services .service-item .icon {
   width: 48px;
   height: 48px;
   position: relative;
   margin-bottom: 50px;
-}
+} */
 
 .services .service-item .icon i {
   color: var(--color-secondary);
@@ -762,7 +762,7 @@ section {
   line-height: 1.8;
 }
 
-.services .service-item .icon:before {
+/* .services .service-item .icon:before {
   position: absolute;
   content: "";
   height: 100%;
@@ -773,7 +773,34 @@ section {
   top: 10px;
   right: -15px;
   transition: 0.3s;
+} */
+
+.services .service-item .icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  display: inline-block;
 }
+
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #f0f1f2;
+  border-radius: 50px;
+  z-index: 1;  /* Lower z-index to place it behind the image */
+  top: 10px;
+  right: -15px;
+  transition: 0.3s;
+}
+
+.services .service-item .icon img {
+  position: relative;
+  z-index: 2;  /* Higher z-index to place it in front of the circle */
+}
+
 
 .services .service-item h3 {
   color: var(--color-default);

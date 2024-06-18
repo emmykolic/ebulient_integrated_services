@@ -4,23 +4,21 @@
         <div class="col-sm-12 col-xl-6">
             <div class="bg-light rounded h-100 p-4">
                 <h6 class="mb-4">Services Form</h6>
-                <form>
+                <form method="POST" action="<?=BURL?>services/chemical_cleaning_action" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                        </div>
+                        <label for="exampleInputText1" class="form-label">Service Name</label>
+                        <input type="text" class="form-control" id="exampleInputName1"
+                            aria-describedby="nameHelp" name="service_name">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputbulletPoint1" class="form-label">Point</label>
+                        <textarea type="text" class="form-control" id="exampleInputbulletPoint1" name="points"></textarea>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="mb-3">
+                        <label class="form-check-label" for="exampleCheck1">Corresponding Image</label>
+                        <input type="file" class="form-control" id="exampleCheck1" name="service_img" accept=".jpeg, .jpg, .png, .gif, .webp">
                     </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <div class="text-center"><button type="submit" class="btn btn-primary col-6">Send</button></div>
                 </form>
             </div>
         </div>

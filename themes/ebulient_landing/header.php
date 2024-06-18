@@ -76,8 +76,8 @@
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="<?=BURL?>services/chemical_cleaning">CHEMICAL CLEANING SERVICES</a></li>
-              <li><a href="#">ENGINEERING</a></li>
-              <li><a href="#">SUPPLY SERVICES</a></li>
+              <li><a href="<?=BURL?>services/engineering">ENGINEERING</a></li>
+              <li><a href="<?=BURL?>services/supply_services">SUPPLY SERVICES</a></li>
             </ul>
           </li>
           <li><a href="<?=BURL?>contact">Contact</a></li>
