@@ -120,4 +120,10 @@ class services extends boiler
 		include_once 'themes/' . $this->setting->landing_theme . '/footer.php';
 	}
 
+	public function supply_services(){
+		include_once 'themes/' . $this->setting->landing_theme . '/header.php';
+		include_once 'themes/' . $this->setting->landing_theme . '/supply_services.php';
+		include_once 'themes/' . $this->setting->landing_theme . '/footer.php';
+	}
+
 }
