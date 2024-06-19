@@ -7,8 +7,7 @@ class index extends boiler
 		$this->stats = new stats($this->db);
 	}
 
-	public function defaultb()
-	{
+	public function defaultb(){
 		$get_filters = $this->db->query("SELECT DISTINCT name FROM rentals");
 		$get_rentals = $this->db->query("SELECT * FROM rentals");
 
@@ -32,6 +31,8 @@ class index extends boiler
 		// Reset pointers for queries
 		$get_filters->data_seek(0);
 		$get_rentals->data_seek(0);
+
+		$get_services = $this->db->query("SELECT * FROM chemical_cleaning ");
 
 		include_once 'themes/' . $this->setting->landing_theme . '/header.php';
 		include_once 'themes/' . $this->setting->landing_theme . '/index.php';
@@ -79,56 +80,5 @@ class index extends boiler
 		include_once 'themes/' . $this->setting->landing_theme . '/header.php';
 		include_once 'themes/' . $this->setting->landing_theme . '/terms.php';
 		include_once 'themes/' . $this->setting->landing_theme . '/footer.php';
-	}
-
-
-
-
-
-	public function  testimony()
-	{
-
-		$name = $this->clean->post('name');
-		$testimony = $this->clean->post('testimony');
-		$dated = time();
-		if ($testimony == "" || $name == "") {
-			$this->error = 1;
-			$this->error_msg .= " Fill up empty fields";
-		}
-
-		if ($this->error == 0) {
-			$this->db->query("INSERT INTO testimonies (name, testimony, date_created) VALUES ('$name' , '$testimony' ,'$dated') ");
-			echo "<div class='alert alert-success'>Your Testimony has been submitted</div>";
-		} else {
-			echo "<div class='alert alert-danger'>" . $this->error_msg . "</div>";
-		}
-	}
-
-
-	public function testimony_delete($tid)
-	{
-		$this->auth->editor();
-		$this->db->query("DELETE FROM testimonies WHERE tid='$tid'");
-		$this->alert->set("Testimony Deleted", 'success');
-		header('location:' . BURL . "index/testimony_mgt");
-	}
-
-	public function testimony_approve($tid)
-	{
-		$this->auth->editor();
-		$this->db->query("UPDATE testimonies SET is_approved=1 WHERE tid='$tid'");
-		$this->alert->set("Testimony Approved", 'success');
-		header('location:' . BURL . "index/testimony_mgt");
-	}
-
-	public function  testimony_mgt($start = 0)
-	{
-		$this->auth->editor();
-		$this->page_title = "Testimonies";
-		$testimonies = $this->db->query("SELECT * FROM testimonies WHERE is_approved=0 ");
-
-		include_once 'themes/' . $this->setting->admin_theme . '/header.php';
-		include_once 'themes/' . $this->setting->admin_theme . '/index_testimonies_mgt.php';
-		include_once 'themes/' . $this->setting->admin_theme . '/footer.php';
 	}
 }

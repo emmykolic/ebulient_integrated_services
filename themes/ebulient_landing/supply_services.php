@@ -41,14 +41,35 @@
                         <img src="<?= BURL ?>themes/ebulient_landing/img/engineering-1.jpg" alt="Engineering Image" class="img-fluid">
                     </div>
                 </div>
+
                 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item position-relative">
-                    <img src="<?= BURL ?>themes/ebulient_landing/img/engineering-1.jpg" alt="" class="img-fluid">
-                    <h3 class="text-center"></h3>
-                    <!-- <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-                </div><!-- End Service Item -->
+                    <div class="row m-4">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-1.png" alt="" class="img-fluid">
+                            <h3 class="text-center"></h3>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-2.png" alt="" class="img-fluid">
+                            <h3 class="text-center"></h3>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-3.png" alt="" class="img-fluid">
+                            <h3 class="text-center"></h3>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-4.png" alt="" class="img-fluid">
+                            <h3 class="text-center"></h3>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-5.png" alt="" class="img-fluid">
+                            <h3 class="text-center"></h3>
+                        </div><!-- End Service Item -->
+                    </div>
+
 
                 <!-- Add more service items here if needed -->
 

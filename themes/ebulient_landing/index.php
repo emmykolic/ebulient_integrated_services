@@ -124,150 +124,88 @@
         <div class="container" data-aos="fade-up">
 
           <div class="section-header">
-            <h2>Services</h2>
-            <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos
-              quam</p>
+            <h2>Our Services</h2>
+            <p>Here're some mixures of the services we render  kindly click the link below to see full services.</p>
           </div>
 
           <div class="row gy-4">
-
+            <?php while ($row =  $get_services->fetch_assoc()): ?>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="service-item  position-relative">
                 <div class="icon">
                   <i class="fa-solid fa-mountain-city"></i>
                 </div>
-                <h3>Nesciunt Mete</h3>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                  tempore et consequatur.</p>
-                <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                <h3><?=$row['service_name']?></h3>
+                <?php
+                    // Split points into an array using a delimiter
+                    $points = explode(',', $row['points']);
+                    foreach ($points as $point) {
+                      echo "<li>" . htmlspecialchars($point) . "</li>";
+                    }
+                  ?>
+                <a href="<?=BURL?>services/chemical_cleaning" class="readmore stretched-link">Learn more <i
                     class="bi bi-arrow-right"></i></a>
               </div>
             </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                </div>
-                <h3>Eosle Commodi</h3>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                  nesciunt dolorem.</p>
-                <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-compass-drafting"></i>
-                </div>
-                <h3>Ledo Markt</h3>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                  eos earum corrupti.</p>
-                <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-trowel-bricks"></i>
-                </div>
-                <h3>Asperiores Commodit</h3>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                  adipisci neque.</p>
-                <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-helmet-safety"></i>
-                </div>
-                <h3>Velit Doloremque</h3>
-                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
-                  alias eius labore.</p>
-                <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                </div>
-                <h3>Dolori Architecto</h3>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
-                  recusandae ducimus enim.</p>
-                <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-
+            <?php endwhile;?>
           </div>
+
+          <div class="row gy-4 mt-2 ">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item position-relative">
+                    <img src="<?= BURL ?>themes/ebulient_landing/img/engineering-1.jpg" alt="" class="img-fluid">
+                    <h3 class="text-center"></h3>
+                    <a href="<?=BURL?>services/engineering" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item position-relative">
+                    <img src="<?= BURL ?>themes/ebulient_landing/img/engineering-2.jpg" alt="" class="img-fluid">
+                    <h3 class="text-center"></h3>
+                    <a href="<?=BURL?>services/engineering" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div><!-- End Service Item -->
+            
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item position-relative">
+                    <img src="<?= BURL ?>themes/ebulient_landing/img/engineering-3.jpg" alt="" class="img-fluid">
+                    <h3 class="text-center"></h3>
+                    <a href="<?=BURL?>services/engineering" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div><!-- End Service Item -->
+            
+          </div>
+
+          <div class="row m-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-1.png" alt="" class="img-fluid">
+                <h3 class="text-center"></h3>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-2.png" alt="" class="img-fluid">
+                <h3 class="text-center"></h3>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-3.png" alt="" class="img-fluid">
+                <h3 class="text-center"></h3>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-4.png" alt="" class="img-fluid">
+                <h3 class="text-center"></h3>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="<?= BURL ?>themes/ebulient_landing/img/service-supply-5.png" alt="" class="img-fluid">
+                <h3 class="text-center"></h3>
+            </div><!-- End Service Item -->
+        </div>
 
         </div>
       </section><!-- End Services Section -->
-
-      <!-- ======= Alt Services Section ======= -->
-      <section id="alt-services" class="alt-services">
-        <div class="container" data-aos="fade-up">
-
-          <div class="row justify-content-around gy-4">
-            <div class="col-lg-6 img-bg" style="background-image: url(<?=BURL?>themes/ebulient_landing/img/front_view.jpg);" data-aos="zoom-in"
-              data-aos-delay="100"></div>
-
-            <div class="col-lg-5 d-flex flex-column justify-content-center">
-              <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-              <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
-                laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                <i class="bi bi-easel flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                    non provident</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-patch-check flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                  <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus
-                    aut eligendi omnis</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                  <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet.
-                    Et eligendi</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Alt Services Section -->
 
       <!-- ======= Our Projects Section ======= -->
       <section id="projects" class="projects">
@@ -318,128 +256,6 @@
           </div><!-- End Portfolio Isotope -->
         </div>
       </section><!-- End Our Projects Section -->
-
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials section-bg">
-        <div class="container" data-aos="fade-up">
-
-          <div class="section-header">
-            <h2>Testimonials</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia
-              reprehenderit sunt deleniti</p>
-          </div>
-
-          <div class="slides-2 swiper">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                      Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                      quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                      tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                      minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="<?=BURL?>themes/ebulient_landing/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                      culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                      quid.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </section><!-- End Testimonials Section -->
-
     
     </section>
     <!-- End Recent Blog Posts Section -->

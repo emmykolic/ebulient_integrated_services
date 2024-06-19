@@ -21,7 +21,7 @@
         provide innovative, safe and cost effective cleaning and metal passivation solutions to
         diverse industries, ranging from heavy oil refining to ultra-sterile dairy and potable
         water installations.</p>
-        <div class="row gy-4">
+        <div class="row gy-4 mt-5">
         <!-- CHEMICAL CLEANING SERVICES -->
         <div class="container">
           <div class="row">
